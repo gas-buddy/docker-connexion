@@ -15,6 +15,4 @@ RUN chown alpine-user /data
 RUN mkdir -p /home/alpine-user && \
   chown alpine-user /home/alpine-user
 
-USER alpine-user
-
 ENTRYPOINT /bin/sh
