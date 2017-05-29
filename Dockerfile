@@ -7,7 +7,7 @@ RUN apk add --no-cache python3 && \
     rm -r /usr/lib/python*/ensurepip && \
     pip3 install --upgrade pip connexion && \
     apk add --update curl && \
-    apk add --update nodejs && \
+    apk add --update nodejs nodejs-npm && npm install npm@latest -g && \
     apk del py-pip
 
 WORKDIR /data
